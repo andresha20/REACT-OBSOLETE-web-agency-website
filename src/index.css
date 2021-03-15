@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  background-image: url('./Assets//Images/mainBackground.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
