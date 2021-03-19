@@ -78,5 +78,11 @@ export default makeStyles ((theme) => ({
         },
         white: {
             color: '#fff'
+        },
+        sectionFive: {
+            border: '1px solid rgba(255, 255, 255, 0.2)',
+            padding: '20px 430px 100px 430px',
+            backgroundColor: '#F5F5F5'
         }
+
 }))

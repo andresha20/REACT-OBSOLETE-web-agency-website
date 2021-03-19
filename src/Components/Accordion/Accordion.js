@@ -2,7 +2,7 @@ import { Grid, Paper, Typography, Box, Button, Divider, Accordion, AccordionDeta
 import useStyles from './Styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const AccordionComponent = ({ title, text }) => {
+const AccordionComponent = ({ title, text, items }) => {
 
     const classes = useStyles();
 
@@ -11,6 +11,7 @@ const AccordionComponent = ({ title, text }) => {
             <Accordion>
                 <AccordionSummary className={classes.textColor} expandIcon={<ExpandMoreIcon />}>{title}</AccordionSummary>
                 <AccordionDetails className={classes.textColor}>{text}</AccordionDetails>
+                {items && (<AccordionDetails className={classes.textColor}><div>{items.map(item => (<p>{item}</p>))}</div></AccordionDetails>) }
             </Accordion>
         </>
     )
